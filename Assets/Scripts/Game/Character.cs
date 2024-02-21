@@ -94,7 +94,7 @@ public class Character : MonoBehaviour
     }
 
     void CheckForQueuingJump(){
-        if (Input.GetKeyDown(KeyCode.W) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             _isJumpQueued = true;
         }
