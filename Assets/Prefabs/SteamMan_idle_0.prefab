@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 1988192100530525529}
   - component: {fileID: 2779760338733029095}
   - component: {fileID: 9115427617685615947}
-  - component: {fileID: 8179281441046438496}
-  m_Layer: 0
+  - component: {fileID: 2462162759509402233}
+  m_Layer: 7
   m_Name: SteamMan_idle_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.83, y: -2.37, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -124,7 +124,7 @@ Rigidbody2D:
   m_Mass: 0.5
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 10
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -135,7 +135,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!60 &9115427617685615947
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -189,7 +189,7 @@ PolygonCollider2D:
       - {x: 0.089123815, y: 0.09601633}
       - {x: 0.06, y: 0.17999999}
   m_UseDelaunayMesh: 0
---- !u!114 &8179281441046438496
+--- !u!114 &2462162759509402233
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -205,4 +205,4 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   speed: 100
-  jumpForce: 30
+  jumpForce: 5

@@ -19,6 +19,7 @@ public class Character : MonoBehaviour
     public LayerMask layerMask;
     public float speed;
     public float jumpForce;
+    public float money = 0;
 
     
     void Start()
@@ -86,7 +87,6 @@ public class Character : MonoBehaviour
     void JumpIfQueued(){
         if (_isJumpQueued)
         {
-            Debug.Log("jump");
             _isJumpQueued = false;
             _playerRigidBody.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
             _playerAnimator.SetTrigger("isJumping");
@@ -95,14 +95,13 @@ public class Character : MonoBehaviour
 
     void CheckForQueuingJump(){
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
-        {
+        {   
             _isJumpQueued = true;
         }
     }
 
     void CheckForRunning(){
         if(Input.GetKeyDown(KeyCode.LeftShift)){
-            Debug.Log("Leftshift true");
             isRunning = true;
         }
 
@@ -114,12 +113,21 @@ public class Character : MonoBehaviour
 
     void CheckGrounded()
     {
-        if(Physics2D.Raycast(transform.position, Vector3.down, 0.8f,layerMask)){
+        if(Physics2D.Raycast(transform.position, Vector3.down, 1f,layerMask)){
             isGrounded=true;
         }
         else{
             isGrounded=false;
         }
         _playerAnimator.SetBool("isGrounded", isGrounded);
+    }
+
+    public void decreaseHealth()
+    {
+        _playerAnimator.SetTrigger("isHurting");
+    }
+
+    public float IncreaseMoney(){
+        return money++;
     }
 }
