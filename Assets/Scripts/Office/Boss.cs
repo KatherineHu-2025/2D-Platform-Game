@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,6 +9,7 @@ public class Boss : MonoBehaviour
     public Transform raycastOrigin; 
     public float raycastDistance = 3f; 
     public LayerMask layerMask;
+    public TMP_Text myText;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +42,7 @@ public class Boss : MonoBehaviour
                     {   
                         if(hit.collider.gameObject.GetComponent<Character>().money >= 100){
                             Debug.Log("Your work for today is finished. You can leave now.");
+                            myText.text = "Your work for today is finished. You can leave now.";
                         }
                         else{
                             SceneManager.LoadScene("Office");

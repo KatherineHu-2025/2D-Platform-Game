@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public class EnterCueScript : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -9,8 +9,10 @@ public class EnterCueScript : MonoBehaviour
     public Transform raycastOrigin; 
     public float raycastDistance = 3f;
     public LayerMask layerMask;
-
     private bool canCastRay = true;
+    public TMP_Text myText;
+
+    private int count = ReloadCounter.reloadCount;
 
     void Update()
     {
@@ -23,12 +25,18 @@ public class EnterCueScript : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(raycastOrigin.position, Vector2.up, raycastDistance, layerMask);
             if (hit.collider != null)
             {   
-                if(time == 0){
-                Debug.Log("9 o' clock now. Start making money! You need to make 100$.");
-                time++;
+                if(count == 0){
+
+                }
+                if(time == 0 && count == 0){
+                    myText.text = "9 o' clock now. Start making money! You need to make 100$.";
+                    time++;
+                }
+                else if(time == 0 && count != 0){
+                    myText.text = "This time, BEHAVE YOURSELF.";
                 }
                 else{
-                Debug.Log("Don't wander around! Go work! The boss is watching.");
+                    myText.text = "Don't wander around! Go work! The boss is watching.";
                 }
                 StartCoroutine(DeactivateRaycastTemporarily()); // Deactivate the raycast
             }

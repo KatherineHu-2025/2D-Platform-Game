@@ -5,7 +5,6 @@ using UnityEngine;
 public class ColliderBox : MonoBehaviour
 {   
     private Rigidbody2D _boxRigidbody;
-    private float money;
     void Start(){
         _boxRigidbody = GetComponent<Rigidbody2D>();
     }

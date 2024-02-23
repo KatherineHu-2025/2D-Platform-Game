@@ -1,6 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class BossRegionCue : MonoBehaviour
 {
@@ -11,6 +11,7 @@ public class BossRegionCue : MonoBehaviour
     public LayerMask layerMask;
 
     private bool canCastRay = true;
+    public TMP_Text myText;
 
     void Update()
     {
@@ -23,20 +24,18 @@ public class BossRegionCue : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(raycastOrigin.position, Vector2.up, raycastDistance, layerMask);
             if (hit.collider != null)
             {   
-                if(time == 0){
-                Debug.Log("Go back to work! Don't sneak out when boss is WATCHING!");
-                time++;
+                if(hit.collider.gameObject.GetComponent<Character>().money < 100){
+                    if(time == 0){
+                        myText.text = "Go back to work! Don't sneak out when boss is <color=red> WATCHING!</color>";
+                        time++;
+                    }
+                    else{
+                        myText.text = "<uppercase> Do you really want to do this? </uppercase>";
+                    }
+                    StartCoroutine(DeactivateRaycastTemporarily()); // Deactivate the raycast
                 }
-                else{
-                Debug.Log("Do you really want to do this?");
-                }
-                StartCoroutine(DeactivateRaycastTemporarily()); // Deactivate the raycast
             }
         }
-    }
-
-    void updateUI(){
-
     }
 
     IEnumerator DeactivateRaycastTemporarily()
