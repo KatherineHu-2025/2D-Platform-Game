@@ -7,7 +7,9 @@ public class LoadAdultScene : MonoBehaviour
 {
     // Start is called before the first frame update
     private void OnTriggerEnter2D(Collider2D collision)
-    {
-        SceneManager.LoadScene("Game");
+    {   
+        if(collision.CompareTag("Player")){
+            SceneManager.LoadScene("Office");
+        }
     }
 }

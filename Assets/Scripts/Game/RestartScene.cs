@@ -15,8 +15,10 @@ public class RestartScene : MonoBehaviour
 
 
     private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log("collision entered");
-        SceneManager.LoadScene("BoyPhase");
+    {   
+        if(collision.CompareTag("Player")){
+            Debug.Log("collision entered");
+            SceneManager.LoadScene("BoyPhase");
+        }
     }
 }

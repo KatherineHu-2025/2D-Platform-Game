@@ -19,7 +19,7 @@ public class Character : MonoBehaviour
     public LayerMask layerMask;
     public float speed;
     public float jumpForce;
-    public float money = 0;
+    public int money = 0;
 
     
     void Start()
@@ -127,7 +127,11 @@ public class Character : MonoBehaviour
         _playerAnimator.SetTrigger("isHurting");
     }
 
-    public float IncreaseMoney(){
+    public int IncreaseMoney(){
         return money++;
+    }
+
+    public int checkMoney(){
+        return money;
     }
 }

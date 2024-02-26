@@ -29,11 +29,14 @@ public class EnterCueScript : MonoBehaviour
 
                 }
                 if(time == 0 && count == 0){
-                    myText.text = "9 o' clock now. Start making money! You need to make 100$.";
+                    myText.text = "It's 9 o' clock now. Start making money! You need to make 100$.";
                     time++;
                 }
-                else if(time == 0 && count != 0){
-                    myText.text = "This time, BEHAVE YOURSELF.";
+                else if(time == 0 && count == 1){
+                    myText.text = "That's a clumsy mistake! Don't make it again.";
+                }   
+                else if(time == 0 && count > 1){
+                    myText.text = "Hey BAHAVE YOURSELF. I said the boss IS WATCHING.";
                 }
                 else{
                     myText.text = "Don't wander around! Go work! The boss is watching.";

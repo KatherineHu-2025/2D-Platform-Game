@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ColliderBox : MonoBehaviour
 {   
     private Rigidbody2D _boxRigidbody;
+    public Slider moneySlider;
     void Start(){
         _boxRigidbody = GetComponent<Rigidbody2D>();
     }
@@ -16,7 +18,7 @@ public class ColliderBox : MonoBehaviour
         {
             // Disables the Collider2D component
             float money = coll.gameObject.GetComponent<Character>().IncreaseMoney();
-            Debug.Log("Money Added: " + money);
+            moneySlider.value = money;
         }
     }
 }
