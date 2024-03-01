@@ -24,7 +24,8 @@ public class Character : MonoBehaviour
     public static bool withTicket = false;
     
     void Start()
-    {
+    {   
+        money = BoyMovement.money;
         _playerSpriteRenderer = GetComponent<SpriteRenderer>();
         _playerRigidBody = GetComponent<Rigidbody2D>();
         _playerAnimator = GetComponent<Animator>();
