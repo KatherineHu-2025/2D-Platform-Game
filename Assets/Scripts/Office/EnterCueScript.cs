@@ -29,7 +29,7 @@ public class EnterCueScript : MonoBehaviour
 
                 }
                 if(time == 0 && count == 0){
-                    myText.text = "It's 9 o' clock now. Start making money! You need to make 100$.";
+                    myText.text = "It's 9 o' clock now. Start making money! You need to make 30$.";
                     time++;
                 }
                 else if(time == 0 && count == 1){
@@ -44,10 +44,6 @@ public class EnterCueScript : MonoBehaviour
                 StartCoroutine(DeactivateRaycastTemporarily()); // Deactivate the raycast
             }
         }
-    }
-
-    void updateUI(){
-
     }
 
     IEnumerator DeactivateRaycastTemporarily()

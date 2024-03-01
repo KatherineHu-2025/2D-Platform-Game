@@ -24,7 +24,7 @@ public class BossRegionCue : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(raycastOrigin.position, Vector2.up, raycastDistance, layerMask);
             if (hit.collider != null)
             {   
-                if(hit.collider.gameObject.GetComponent<Character>().money < 100){
+                if(Character.CheckMoney() < 30){
                     if(time == 0){
                         myText.text = "Go back to work! Don't sneak out when boss is <color=red> WATCHING!</color>";
                         time++;

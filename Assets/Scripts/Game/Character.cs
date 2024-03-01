@@ -19,8 +19,9 @@ public class Character : MonoBehaviour
     public LayerMask layerMask;
     public float speed;
     public float jumpForce;
-    public int money = 0;
+    public static int money = 0;
 
+    public static bool withTicket = false;
     
     void Start()
     {
@@ -127,11 +128,15 @@ public class Character : MonoBehaviour
         _playerAnimator.SetTrigger("isHurting");
     }
 
-    public int IncreaseMoney(){
+    public static int IncreaseMoney(){
         return money++;
     }
 
-    public int checkMoney(){
+    public static int CheckMoney(){
         return money;
+    }
+
+    public void BuyTicket(){
+        withTicket = true;
     }
 }
