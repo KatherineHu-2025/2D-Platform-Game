@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/AdultScene1.unity
     guid: 073141383407b4220965d0ae06965a3a
   - enabled: 1
+    path: Assets/Scenes/AfterSchoolFinal.unity
+    guid: 8c74d67a9f9f5b94daf6f1ac456c2873
+  - enabled: 1
     path: Assets/Scenes/AfterSchool.unity
     guid: 2a20465df01ed3047b09da417c2fd755
   m_configObjects: {}

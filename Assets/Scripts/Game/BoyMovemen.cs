@@ -19,7 +19,7 @@ public class BoyMovement : MonoBehaviour
     public LayerMask layerMask;
     public float speed;
     public float jumpForce;
-    public int money = 0;
+    public static int money = 0;
 
 
     void Start()
@@ -128,7 +128,7 @@ public class BoyMovement : MonoBehaviour
         }
         else
         {
-            Debug.Log("isn't grounded");
+
             isGrounded = false;
         }
         _playerAnimator.SetBool("isGrounded", isGrounded);
@@ -147,5 +147,16 @@ public class BoyMovement : MonoBehaviour
     public int checkMoney()
     {
         return money;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Money"))
+        {
+            money = 5;
+            collision.gameObject.SetActive(false);
+            Debug.Log("money is: " + money);
+
+        }
     }
 }

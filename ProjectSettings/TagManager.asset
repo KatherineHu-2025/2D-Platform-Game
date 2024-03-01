@@ -3,7 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Gaps
+  - School
+  - Checkpoint
+  - Restart
+  - Tutorial
+  - Bus
+  - End
+  - Platform
+  - SpikeText
+  - Spikes
+  - Money
   layers:
   - Default
   - TransparentFX
@@ -11,7 +22,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Ground
   - 
   - 
   - 
