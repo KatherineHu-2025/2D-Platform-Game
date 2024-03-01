@@ -122,7 +122,7 @@ public class BoyMovement : MonoBehaviour
 
     void CheckGrounded()
     {
-        if (Physics2D.Raycast(transform.position, Vector3.down, 0.01f, layerMask))
+        if (Physics2D.Raycast(transform.position, Vector3.down, 1f, layerMask))
         {
             isGrounded = true;
         }

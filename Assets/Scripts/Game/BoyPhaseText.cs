@@ -21,7 +21,7 @@ public class BoyPhaseText : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(raycastOrigin.position, Vector2.up, raycastDistance, layerMask);
         if (hit.collider != null)
         {
-            Debug.Log("collider hit"  + hit.collider);
+            //Debug.Log("collider hit"  + hit.collider);
             if (hit.collider.CompareTag("Tutorial"))
             {
                 //Debug.Log("tutorial");

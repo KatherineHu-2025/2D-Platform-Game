@@ -8,4 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/BoyPhaseFinal.unity
+    guid: 02350661c24a76e4ea83d808a3deaee4
+  - enabled: 0
+    path: Assets/Scenes/School.unity
+    guid: e1b6615a174bcbc44a424265df8f775a
+  - enabled: 1
+    path: Assets/Scenes/AdultScene1.unity
+    guid: 073141383407b4220965d0ae06965a3a
+  - enabled: 1
+    path: Assets/Scenes/AfterSchool.unity
+    guid: 2a20465df01ed3047b09da417c2fd755
   m_configObjects: {}

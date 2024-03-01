@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 48489238}
   - component: {fileID: 48489239}
   - component: {fileID: 48489240}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: e_Platform2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -557,6 +557,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlatformSpinParent (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2085795324267795451, guid: a3cdc69c152c22040b59892747e80ffb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2281109321264960855, guid: a3cdc69c152c22040b59892747e80ffb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -47.453598
@@ -596,6 +600,42 @@ PrefabInstance:
     - target: {fileID: 2281109321264960855, guid: a3cdc69c152c22040b59892747e80ffb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3849998968211379085, guid: a3cdc69c152c22040b59892747e80ffb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121349582292642360, guid: a3cdc69c152c22040b59892747e80ffb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376842762078602476, guid: a3cdc69c152c22040b59892747e80ffb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424956178325445772, guid: a3cdc69c152c22040b59892747e80ffb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6521659194901622058, guid: a3cdc69c152c22040b59892747e80ffb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6788419300738342834, guid: a3cdc69c152c22040b59892747e80ffb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818307579463922868, guid: a3cdc69c152c22040b59892747e80ffb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8198274461192508686, guid: a3cdc69c152c22040b59892747e80ffb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213717032046091663, guid: a3cdc69c152c22040b59892747e80ffb, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6421,7 +6461,7 @@ GameObject:
   - component: {fileID: 1927190089}
   - component: {fileID: 1927190090}
   - component: {fileID: 1927190091}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: e_Platform3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6659,7 +6699,7 @@ GameObject:
   - component: {fileID: 2059876913}
   - component: {fileID: 2059876914}
   - component: {fileID: 2059876915}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: e_Platform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6928,6 +6968,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlatformSpinParent
       objectReference: {fileID: 0}
+    - target: {fileID: 2085795324267795451, guid: a3cdc69c152c22040b59892747e80ffb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2281109321264960855, guid: a3cdc69c152c22040b59892747e80ffb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -59.8536
@@ -6968,17 +7012,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5826854920829134159, guid: a3cdc69c152c22040b59892747e80ffb, type: 3}
-      propertyPath: m_Color.b
-      value: 0.3137255
+    - target: {fileID: 3849998968211379085, guid: a3cdc69c152c22040b59892747e80ffb, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 5826854920829134159, guid: a3cdc69c152c22040b59892747e80ffb, type: 3}
-      propertyPath: m_Color.g
-      value: 0.63529414
+    - target: {fileID: 4121349582292642360, guid: a3cdc69c152c22040b59892747e80ffb, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 5826854920829134159, guid: a3cdc69c152c22040b59892747e80ffb, type: 3}
-      propertyPath: m_Color.r
-      value: 0.93333334
+    - target: {fileID: 4376842762078602476, guid: a3cdc69c152c22040b59892747e80ffb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424956178325445772, guid: a3cdc69c152c22040b59892747e80ffb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6521659194901622058, guid: a3cdc69c152c22040b59892747e80ffb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6788419300738342834, guid: a3cdc69c152c22040b59892747e80ffb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818307579463922868, guid: a3cdc69c152c22040b59892747e80ffb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8198274461192508686, guid: a3cdc69c152c22040b59892747e80ffb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213717032046091663, guid: a3cdc69c152c22040b59892747e80ffb, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
