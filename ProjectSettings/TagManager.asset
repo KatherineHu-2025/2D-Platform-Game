@@ -15,6 +15,7 @@ TagManager:
   - SpikeText
   - Spikes
   - Money
+  - CheckpointText
   layers:
   - Default
   - TransparentFX
