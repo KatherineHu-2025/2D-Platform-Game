@@ -22,6 +22,9 @@ public class Character : MonoBehaviour
     public static int money = 0;
 
     public static bool withTicket = false;
+
+    //audio sfx
+    public AudioSource jumpSFX;
     
     void Start()
     {   
@@ -92,6 +95,9 @@ public class Character : MonoBehaviour
             _isJumpQueued = false;
             _playerRigidBody.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
             _playerAnimator.SetTrigger("isJumping");
+
+            jumpSFX.time = 0.2f;
+            jumpSFX.Play(); //play the jump sound effect
         }
     }
 

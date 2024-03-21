@@ -14,6 +14,8 @@ public class TicketMachine : MonoBehaviour
 
     private GameObject ticket;
 
+    public AudioSource ticketAudioSource;
+
 
     void Update()
     {
@@ -37,6 +39,7 @@ public class TicketMachine : MonoBehaviour
                 hit.collider.gameObject.GetComponent<Character>().BuyTicket();
                 Character.money -= 5;
                 Destroy(ticket);
+                ticketAudioSource.Play();
             }
         else if(Input.GetKeyDown(KeyCode.N)){
             Destroy(ticket);

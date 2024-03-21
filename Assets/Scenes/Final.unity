@@ -633,6 +633,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText: {fileID: 1152676580}
+  YesButton: {fileID: 757018530}
+  thisButton: {fileID: 564007002}
+  buttonText: {fileID: 1741800043}
 --- !u!1 &667708511
 GameObject:
   m_ObjectHideFlags: 0
@@ -914,6 +917,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText: {fileID: 1152676580}
+  NoButton: {fileID: 564007002}
+  thisButton: {fileID: 757018530}
+  buttonText: {fileID: 667708513}
 --- !u!1 &1152676578
 GameObject:
   m_ObjectHideFlags: 0
